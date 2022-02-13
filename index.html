@@ -10,13 +10,17 @@
     <title>nakshatra-shop</title>
 </head>
 <body>
-    <nav class="nav-box flex-row align-center navbar">
+    <nav class="nav-box flex-row align-center">
         <div class="nav-section flex-row align-center flex-start">
             <div class="hamburger display-none btn-border-none bg-transparent">
                 <i class="fas fa-bars"></i>
             </div>
             <div class="brand-title">
-                <a href="#">Title</a>
+                <a href="#">
+                    <div class="title font-weight-3">
+                        nakshatra <span class="sub-title">Shop</span>
+                    </div>
+                </a>
             </div>
             <ul class="flex-row nav-cta-box nav-items-box align-center justify-around">
                 <li>
@@ -29,8 +33,10 @@
         </div>
     
         <div class="flex-row nav-items-box nav-section justify-around justify-flex-end">
-            <button class="btn btn-primary ">Login</button>
-            <div class="search-div flex-row align-center">
+            <a class="btn-login mobile-hidden" href="#">
+                <button class="btn btn-primary mr-1">Login</button>
+            </a>
+            <div class="search-div flex-row align-center mobile-hidden">
                 <label for="serach-box">
                     <input class="input-search btn-border-none bg-transparent" id="serach-box" type="text" placeholder="Search" aria-label="Search Box"/>
                     <button class="nav-search-btn btn-border-none bg-transparent" type="sbumit">
@@ -40,18 +46,18 @@
             </div>
             
             <ul class="nav-link-items flex-row align-center justify-around">
-                <li>
+                <li class="user-icon mobile-hidden">
                     <a href="#">
                         <i class="fas fa-user-alt"></i>
                     </a>
                 </li>
-                <li class="cart-icon">
+                <li class="nav-cta-icon">
                     <a href="#">
                         <i class="fas fa-shopping-cart"></i>
                         <span class="icon-badge number-sm-badge">9</span>
                     </a>
                 </li>
-                <li class="cart-icon">
+                <li class="nav-cta-icon">
                     <a class="#">
                         <i class="fas fa-heart"></i>
                         <span class="icon-badge number-sm-badge">9</span>
@@ -60,5 +66,19 @@
             </ul>
         </div>
     </nav>
+    <div class="cover-div">
+        <img class="img-responsive" src="./assests/images/cover-image.jpg" alt="Cover image">
+        <div class="cover-text-box">
+            <div class="title font-weight-4">
+                Watch Collection
+            </div>
+            <div class="cover-text">
+                <p>Find best watches for you and your loved ones</p>
+                <button class="btn btn-primary">Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 </html>
