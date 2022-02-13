@@ -3,3 +3,21 @@
     margin: 0;
     padding: 0;
 }
+
+.cart-icon {
+    position: relative;
+}
+
+.number-sm-badge {
+    top: -10px;
+}
+
+@media screen and (max-width: 864px) {
+    .nav-items-box {
+        display: flex;
+    }
+
+    .nav-cta-box {
+        display: none;
+    }
+}
