@@ -6,20 +6,27 @@
     top: -10px;
 }
 
+.main-div {
+    gap: 8rem;
+}
+
 .cover-div {
     position:relative;
     background-size: cover;
     height: 40rem;
 }
 
+.sub-headings:hover  {
+    color: var(--light-primary-color);
+    text-decoration: underline;
+    text-decoration-color: var(--light-primary-color);
+}
+
 .cover-text-box {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
     position: absolute;
     top: 25%;
     left: 17%;
-    color: white;
+    color: var(--white-color);
 }
 
 .cover-heading {
@@ -31,6 +38,38 @@
     font-size: 2rem; 
     width: 60%;
 }
+
+.new-section {
+    color: var(--gray-color);
+}
+
+.new-card-div {
+    width: 80%;
+}
+
+.new-div-box {
+    width: 30rem;
+    height: 20rem;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 4px var(--light-gray-color);
+    color: var(--lighter-yellow-color);
+    font-weight: 600;
+    transition: all .2s ease-in-out; 
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 2rem;
+} 
+
+.new-div-box:hover {
+    transform: scale(1.1);
+}
+
+.new-div-img {
+    border-radius: 10px;;
+}
+
   
 @media screen and (max-width: 864px) {
     html {
