@@ -1,3 +1,8 @@
+.nav-box {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
 
 .nav-cta-icon {
     position: relative;
@@ -12,6 +17,7 @@
 }
 
 .main-div {
+    margin-top: 5rem;
     gap: 8rem;
     color: var(--secondary-color);
 }
@@ -89,6 +95,19 @@
 
 .category-items:hover {
     box-shadow: 0 0 16px 3px var(--light-gray-color);
+}
+
+.brand-box {
+    margin-top: 23rem;
+}
+
+.brands-img-div {
+    width: 15rem;
+    transition: all .2s ease-out;
+}
+
+.brands-img-div:hover {
+    transform: scale(1.2);
 }
 
   
