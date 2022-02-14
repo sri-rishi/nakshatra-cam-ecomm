@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav class="nav-box flex-row align-center">
-        <div class="nav-section flex-row align-center flex-start">
+        <div class="nav-section flex-row align-center justify-evenly">
             <div class="hamburger display-none btn-border-none bg-transparent">
                 <i class="fas fa-bars"></i>
             </div>
@@ -22,21 +22,21 @@
                     </div>
                 </a>
             </div>
-            <ul class="flex-row nav-cta-box nav-items-box align-center justify-around">
-                <li>
+            <ul class="flex-row nav-cta-box nav-items-box align-center justify-evenly">
+                <li class="nav-items">
                     <a href="#">Home</a>
                 </li>
-                <li>
+                <li class="nav-items">
                     <a href="#">Shop</a>
                 </li>
             </ul>
         </div>
     
-        <div class="flex-row nav-items-box nav-section justify-around justify-flex-end">
+        <div class="flex-row nav-items-box nav-section justify-flex-end">
             <a class="btn-login mobile-hidden" href="#">
                 <button class="btn btn-primary mr-1">Login</button>
             </a>
-            <div class="search-div flex-row align-center mobile-hidden">
+            <div class="search-div flex-row align-center mobile-hidden mr-1">
                 <label for="serach-box">
                     <input class="input-search btn-border-none bg-transparent" id="serach-box" type="text" placeholder="Search" aria-label="Search Box"/>
                     <button class="nav-search-btn btn-border-none bg-transparent" type="sbumit">
@@ -46,18 +46,18 @@
             </div>
             
             <ul class="nav-link-items flex-row align-center justify-around">
-                <li class="user-icon mobile-hidden">
+                <li class="nav-items user-icon mobile-hidden">
                     <a href="#">
                         <i class="fas fa-user-alt"></i>
                     </a>
                 </li>
-                <li class="nav-cta-icon">
+                <li class="nav-items nav-cta-icon">
                     <a href="#">
                         <i class="fas fa-shopping-cart"></i>
                         <span class="icon-badge number-sm-badge">9</span>
                     </a>
                 </li>
-                <li class="nav-cta-icon">
+                <li class="nav-items nav-cta-icon">
                     <a class="#">
                         <i class="fas fa-heart"></i>
                         <span class="icon-badge number-sm-badge">9</span>
@@ -82,8 +82,8 @@
             </div>
         </div>
         <div class="new-section flex-column justify-center align-center gap-2">
-            <h3 class="sub-headings md-heading">New Collections</h3>
-            <div class="new-card-div flex-row justify-evenly align-center">
+            <h3 class="md-heading">New Collections</h3>
+            <div class="new-card-div flex-row justify-evenly align-center gap-2">
                 <a href="#">
                     <div class="new-div-box overlay-box">
                         <img class="img-responsive new-div-img" src="./assests/images/new-arrivals-cover.jpg" alt="New Arrivals"  loading="lazy">
@@ -101,6 +101,51 @@
                     </div>
                 </a>
             </div>
+        </div>
+        <div class="flex-column justify-center align-center gap-2">
+            <h3 class="md-heading">Category</h3>
+            <div class="category-item-box grid grid-3-column align-center justify-center gap-2">
+                <a href="#">
+                    <div class="category-items grid justify-center align-center">
+                            <img class="img-responsive" src="./assests/images/cameras-camcorders-cat.png" alt="cameras and camcorders category">
+                        <p>Cameras & Camcorders</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="category-items grid justify-center align-center">
+                        <img class="img-responsive" src="./assests/images/lense-category.png" alt="Lenses and Optics category">
+                        <p>Lenses & Optics</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="category-items grid justify-center align-center">
+                        <img class="img-responsive" src="./assests/images/accessories-category.png" alt="Camera Accessories category">
+                        <p>Cameras Accessories</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="category-items grid justify-center align-center">
+                        <img class="img-responsive" src="./assests/images/STUDIOLIGHT-category.jpg" alt="Lights and studio category">
+                        <p>Lighting & Studio</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="category-items grid justify-center align-center">
+                        <img class="img-responsive" src="./assests/images/pro-video-category.png" alt="Video category">
+                        <p>Video & Audio</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="category-items grid justify-center align-center">
+                        <img class="img-responsive" src="./assests/images/film-category.png" alt="Camera Films category">
+                        <p>Films</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="flex-column justify-center align-center gap-2">
+            <h3></h3>
         </div>
     </div>
 </body>
