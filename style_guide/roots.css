@@ -6,7 +6,8 @@
 
 body {
     width: 100%;
-    overflow-x:hidden ;
+    overflow-x: hidden;
+    background: var(--whitesmoke-color);
 }
 
 
@@ -27,6 +28,7 @@ body {
     --darker-yellow-color: #ff9204;
     --lighter-yellow-color: #ffe7c5;
     --white-color: #fff;
+    --whitesmoke-color: #f3f3f3;
     --red-color: rgb(231, 33, 52);
     --light-primary-color: rgb(17, 153, 216);
     --light-secondary-color: rgb(126, 119, 119);
