@@ -22,9 +22,9 @@
     color: white;
 }
 
-.cover-text-box .title {
+.cover-heading {
     color: var(--primary-color);
-    font-size: 3rem;
+    text-shadow: 3px 3px 4px var(--light-gray-color);
 }
 
 .cover-text {
