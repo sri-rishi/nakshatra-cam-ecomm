@@ -66,27 +66,41 @@
             </ul>
         </div>
     </nav>
-    <div class="cover-div">
-        <img class="img-responsive" src="./assests/images/cover-image.jpg" alt="Cover image">
-        <div class="cover-text-box">
-            <div class="cover-heading md-heading">
-                Collect moments not things
-            </div>
-            <div class="cover-text">
-                <p>Capture your precious moments with our best collections</p>
-                <button class="btn btn-primary">Shop Now</button>
+    <div class="main-div flex-column justify-center">
+        <div class="cover-div">
+            <img class="img-responsive" src="./assests/images/cover-image.jpg" alt="Cover image" loading="lazy">
+            <div class="cover-text-box flex-column justify-center">
+                <div class="cover-heading md-heading">
+                    Collect moments not things
+                </div>
+                <div class="cover-text">
+                    <p>Capture your precious moments with our best collections</p>
+                    <a hrefe="#">
+                        <button class="btn btn-primary">Shop Now</button>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="new-div">
-        <h2>New Collections</h2>
-        <div>
-            <img class="img-responsive" src="./assests/images/new-arrivals-cover.jpeg" alt="New Arrivals">
-            <!-- <p class="overlay">New Arrivals</p> -->
-        </div>
-        <div class="">
-            <img class="img-responsive" src="./assests/images/coming-soon-cover.jpg" alt="Coming Soon">
-            <!-- <p>Coming Soon</p> -->
+        <div class="new-section flex-column justify-center align-center gap-2">
+            <h3 class="sub-headings md-heading">New Collections</h3>
+            <div class="new-card-div flex-row justify-evenly align-center">
+                <a href="#">
+                    <div class="new-div-box overlay-box">
+                        <img class="img-responsive new-div-img" src="./assests/images/new-arrivals-cover.jpg" alt="New Arrivals"  loading="lazy">
+                        <div class="overlay-cont flex-row justify-center align-center">
+                            <p class="text-overlay md-heading">New Arrivals</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="new-div-box overlay-box">
+                        <img class="img-responsive new-div-img" src="./assests/images/coming-soon-cover.jfif" alt="Coming Soon"  loading="lazy">
+                        <div class="overlay-cont flex-row justify-center align-center">
+                            <p class="text-overlay md-heading">Coming Soon</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </body>
