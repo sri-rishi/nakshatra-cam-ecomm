@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+body {
+    width: 100%;
+    overflow-x:hidden ;
+}
+
 
 :root {
     --primary-color: rgb(7, 172, 248);
