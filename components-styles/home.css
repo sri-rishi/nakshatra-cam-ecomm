@@ -8,6 +8,7 @@
 
 .cover-div {
     position:relative;
+    background-size: cover;
     height: 40rem;
 }
 
@@ -22,7 +23,7 @@
 }
 
 .cover-text-box .title {
-    color: var(--dark-primary-color);
+    color: var(--primary-color);
     font-size: 3rem;
 }
 
@@ -57,7 +58,7 @@
     .cover-text-box {
         align-items: center;
         text-align: center;
-        width: 100%;
+        width: fit-content;
         left: 50%;
         top: 50%;
         -webkit-transform: translate(-50%, -50%);
