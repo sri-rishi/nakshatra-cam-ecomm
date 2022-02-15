@@ -20,6 +20,12 @@
     top: -10px;
 }
 
+.shop-cta-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .main-div {
     margin-top: 5rem;
     gap: 8rem;
@@ -101,10 +107,6 @@
     box-shadow: 0 0 16px 3px var(--light-gray-color);
 }
 
-.brand-box {
-    margin-top: 23rem;
-}
-
 .brands-img-div {
     width: 15rem;
     transition: all .2s ease-out;
@@ -152,10 +154,6 @@
     .category-item-box {
         grid-template-columns: 1fr 1fr;
     }
-
-    .brand-box {
-        margin-top: 60rem;
-    }
 }
 
 
@@ -178,7 +176,4 @@
         grid-template-columns: 1fr;
     }
     
-    .brand-box {
-        margin-top: 140rem;
-    }
 }
