@@ -10,6 +10,181 @@
     <title>nakshatra-shop</title>
 </head>
 <body>
+    <nav class="nav-box flex-row align-center">
+        <div class="nav-section flex-row align-center justify-evenly">
+            <div class="hamburger display-none btn-border-none bg-transparent">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="brand-title">
+                <a href="#">
+                    <div class="title font-weight-3">
+                        nakshatra <span class="sub-title">Shop</span>
+                    </div>
+                </a>
+            </div>
+            <ul class="flex-row nav-cta-box nav-items-box align-center justify-evenly">
+                <li class="nav-items">
+                    <a href="#">Home</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#">Shop</a>
+                </li>
+            </ul>
+        </div>
     
+        <div class="flex-row nav-items-box nav-section justify-flex-end">
+            <a class="btn-login mobile-hidden" href="#">
+                <button class="btn btn-primary mr-1">Login</button>
+            </a>
+            <div class="search-div flex-row align-center mobile-hidden mr-1">
+                <label for="serach-box">
+                    <input class="input-search btn-border-none bg-transparent" id="serach-box" type="text" placeholder="Search" aria-label="Search Box"/>
+                    <button class="nav-search-btn btn-border-none bg-transparent" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </label>
+            </div>
+            
+            <ul class="nav-link-items flex-row align-center justify-around">
+                <li class="nav-items user-icon mobile-hidden">
+                    <a href="#">
+                        <i class="fas fa-user-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-items nav-cta-icon">
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="icon-badge number-sm-badge">9</span>
+                    </a>
+                </li>
+                <li class="nav-items nav-cta-icon">
+                    <a class="#">
+                        <i class="fas fa-heart"></i>
+                        <span class="icon-badge number-sm-badge">9</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main-div flex-column justify-center">
+        <div class="cover-div">
+            <img class="img-responsive" src="./assests/images/cover-image.jpg" alt="Cover image" loading="lazy">
+            <div class="cover-text-box flex-column justify-center">
+                <div class="cover-heading md-heading">
+                    Collect moments not things
+                </div>
+                <div class="cover-text flex-column">
+                    <p>Capture your precious moments with our best collections</p>
+                    <a href="#">
+                        <button class="btn shop-cta-btn btn-primary">Shop Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="new-section flex-column justify-center align-center gap-2">
+            <h3 class="md-heading">New Collections</h3>
+            <div class="new-card-div flex-row justify-evenly align-center gap-2">
+                <a href="#">
+                    <div class="new-div-box overlay-box">
+                        <img class="img-responsive new-div-img" src="./assests/images/new-arrivals-cover.jpg" alt="New Arrivals"  loading="lazy">
+                        <div class="overlay-cont flex-row justify-center align-center">
+                            <p class="text-overlay md-heading">New Arrivals</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="new-div-box overlay-box">
+                        <img class="img-responsive new-div-img" src="./assests/images/coming-soon-cover.jfif" alt="Coming Soon"  loading="lazy">
+                        <div class="overlay-cont flex-row justify-center align-center">
+                            <p class="text-overlay md-heading">Coming Soon</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="flex-column justify-center align-center gap-2">
+            <h3 class="md-heading">Category</h3>
+            <div class="category-item-box grid grid-3-column align-center justify-center gap-2">
+                <a href="#">
+                    <div class="category-items grid justify-center align-center">
+                            <img class="img-responsive" src="./assests/images/cameras-camcorders-cat.png" alt="cameras and camcorders category">
+                        <p>Cameras & Camcorders</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="category-items grid justify-center align-center">
+                        <img class="img-responsive" src="./assests/images/lense-category.png" alt="Lenses and Optics category">
+                        <p>Lenses & Optics</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="category-items grid justify-center align-center">
+                        <img class="img-responsive" src="./assests/images/accessories-category.png" alt="Camera Accessories category">
+                        <p>Cameras Accessories</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="category-items grid justify-center align-center">
+                        <img class="img-responsive" src="./assests/images/STUDIOLIGHT-category.jpg" alt="Lights and studio category">
+                        <p>Lighting & Studio</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="category-items grid justify-center align-center">
+                        <img class="img-responsive" src="./assests/images/pro-video-category.png" alt="Video category">
+                        <p>Video & Audio</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="category-items grid justify-center align-center">
+                        <img class="img-responsive" src="./assests/images/film-category.png" alt="Camera Films category">
+                        <p>Films</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="flex-column justify-center align-center">
+            <h3 class="md-heading">Top Featured Brands</h3>
+            <div class="flex-row align-center justify-evenly gap-2">
+                <a href="#">
+                    <div class="brands-img-div">
+                        <img class="img-responsive" src="./assests/images/canon-logo-removebg-preview.png" alt="Canon Logo">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="brands-img-div">
+                        <img class="img-responsive" src="./assests/images/kodak-logo-removebg-preview.png" alt="Kodak Logo">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="brands-img-div">
+                        <img class="img-responsive" src="./assests/images/nikon-logo-removebg-preview.png" alt="Nikon Logo">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="brands-img-div">
+                        <img class="img-responsive" src="./assests/images/sony-logo.jpg" alt="Sony Logo">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-box flex-column justify-center align-center gap-2">
+        <p>Made in <i class="fas fa-heart"></i> by Rishi</p>
+        <div class="footer-icons flex-row align-center gap-3">
+            <a class="social-icon" href="https://github.com/sri-rishi/nakshatra-watch-ecomm">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="social-icon" href="https://www.linkedin.com/in/rishi-srivastava-8311761b7/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a class="social-icon" href="https://twitter.com/sri26_rishi">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="social-icon" href="mailto:sririshi2612@gmail.com">
+                <i class="fas fa-at"></i>
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
