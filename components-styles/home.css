@@ -1,21 +1,3 @@
-.nav-box {
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-}
-
-.nav-cta-icon {
-    position: relative;
-}
-
-.nav-items {
-    margin-top: 5px;
-}
-
-.number-sm-badge {
-    top: -10px;
-}
-
 .shop-cta-btn {
     display: flex;
     align-items: center;
@@ -132,17 +114,6 @@
 
   
 @media only screen and (max-width: 864px) {
-    html {
-        font-size: 80%;
-    }
-    .nav-items-box {
-        display: flex;
-    }
-
-    .nav-cta-box {
-        display: none;
-    }
-
     .cover-text-box {
         left: 15%;
     }
@@ -154,10 +125,6 @@
 
 
 @media only screen and (max-width: 540px) {
-    .mobile-hidden {
-        display: none;
-    }
-
     .cover-text-box {
         align-items: center;
         text-align: center;

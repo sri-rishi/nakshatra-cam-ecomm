@@ -40,3 +40,10 @@ body {
     --light-green-color: #208638;
     --lightest-gray-color: rgba(224,224,224,0.5);
 }
+
+
+@media only screen and (max-width: 864px) {
+    html {
+        font-size: 80%;
+    }
+}
