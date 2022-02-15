@@ -8,6 +8,10 @@
     position: relative;
 }
 
+.nav-link-items > i {
+    font-size: 19.2px;
+}
+
 .nav-items {
     margin-top: 5px;
 }
@@ -148,6 +152,10 @@
     .category-item-box {
         grid-template-columns: 1fr 1fr;
     }
+
+    .brand-box {
+        margin-top: 60rem;
+    }
 }
 
 
@@ -170,4 +178,7 @@
         grid-template-columns: 1fr;
     }
     
+    .brand-box {
+        margin-top: 140rem;
+    }
 }
