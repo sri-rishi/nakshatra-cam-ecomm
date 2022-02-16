@@ -7,7 +7,7 @@
         "aside main main main";
     grid-template-rows: 5rem 1fr;
     grid-template-columns: 15rem 1fr;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .pl-navbar {
@@ -19,11 +19,11 @@
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 2rem;
     width: max-content;
     overflow: auto;
     padding: 2rem 1rem;
     background: var(--white-color);
+    z-index: 1;
     box-shadow: 0 1px 10px var(--light-gray-color);;
 }
 
@@ -31,10 +31,15 @@
     width: 0;
 }
 
+.hidden-aside {
+    background: var(--whitesmoke-color);
+}
+
 .main-box {
     grid-area: main;
-    padding: 1rem 2rem 3rem 1rem;
-    gap: 4rem;
+    justify-items: center;
+    padding: 3rem 1rem 2rem 0;
+    row-gap: 4rem;
 }
 
 .filter-sections {
@@ -43,6 +48,14 @@
 
 .filter-head {
     margin-top: 7rem;
+}
+
+.filter-hidden {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--white-color);
+    padding: 1rem 2rem;
 }
 
 .sub-filt-head {
@@ -80,6 +93,52 @@
 } 
 
 .product-card {
-    max-height: 30rem;
+    max-height: 25rem;
 }
 
+@media only screen and (max-width: 1240px) {
+    .main-box {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 929px) {
+    .productList-temp {
+        grid-template-areas: 
+            "navbar navbar"
+            "main main"
+        ;
+    }
+
+    .main-box {
+        padding-bottom: 6rem;
+    }
+
+    .aside-box {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        margin: 1rem;
+        color: var(--primary-color);
+        font-size: 2rem;
+    }
+
+    .filter-hidden {
+        display: flex;
+    }
+}
+
+
+@media only screen and (max-width: 614px) {
+    .main-box {
+        padding: 3rem 8px;
+    }  
+}
+
+@media only screen and (max-width: 485px) {
+    .main-box {
+        grid-template-columns: 1fr;
+    }
+}
