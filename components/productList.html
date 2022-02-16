@@ -13,7 +13,7 @@
     <div class="productList-temp grid">
         <nav class="nav-box flex-row align-center pl-navbar">
             <div class="nav-section flex-row align-center justify-evenly">
-                <div class="hamburger display-none btn-border-none bg-transparent">
+                <div id="hamburger-btn" class="hamburger display-none btn-border-none bg-transparent">
                     <i class="fas fa-bars"></i>
                 </div>
                 <div class="brand-title">
@@ -67,8 +67,8 @@
                 </ul>
             </div>
         </nav>
-        
-        <aside class="aside-box grid">
+
+        <aside  class="aside-box grid">
             <div class="filter-sections filter-head flex-row align-center justify-between">
                 <span class="xsm-heading font-weight-5">Filter</span>
                 <button class="btn-border-none bg-transparent filter-cta-btn font-weight-5">Clear All</button>
@@ -402,6 +402,11 @@
                 </div>
             </div>
         </main>
+        <footer class="filter-hidden display-none align-items">
+            <button id="filter-shown" class="xsm-heading font-weight-5 bg-transparent btn-border-none">Filter</button>
+        </footer>
     </div>
+
+    <script src="../assests/app.js"></script>
 </body>
 </html>
