@@ -10,7 +10,7 @@
     <title>Product List</title>
 </head>
 <body>
-    <div class="productList-temp">
+    <div class="productList-temp grid">
         <nav class="nav-box flex-row align-center pl-navbar">
             <div class="nav-section flex-row align-center justify-evenly">
                 <div class="hamburger display-none btn-border-none bg-transparent">
@@ -67,15 +67,15 @@
                 </ul>
             </div>
         </nav>
-        <aside class="aside-box ">
-            <div>
-                <span>Filter</span>
-                <button>Clear All</button>
+        <aside class="aside-box grid">
+            <div class="filter-head flex-row align-center justify-between">
+                <span class="xsm-heading font-weight-5">Filter</span>
+                <button class="btn-border-none bg-transparent filter-cta-btn font-weight-5">Clear All</button>
             </div>
-            <div>
-                <div>
-                    <span>Sort</span>
-                    <button>Reset</button>
+            <div class="filter-head m-hr-1">
+                <div class="flex-row align-center justify-between">
+                    <span class="sub-filt-head font-weight-5">Sort</span>
+                    <button class="btn-border-none bg-transparent filter-cta-btn font-weight-5">Reset</button>
                 </div>
                 <ul>
                     <li>
@@ -92,10 +92,10 @@
                     </li>
                 </ul>
             </div>
-            <div>
-                <div>
-                    <span>Category</span>
-                    <button>Clear</button>
+            <div class="filter-head m-hr-1">
+                <div class="flex-row align-center justify-between">
+                    <span class="sub-filt-head font-weight-5">Category</span>
+                    <button class="btn-border-none bg-transparent filter-cta-btn font-weight-5">Clear</button>
                 </div>
                 <ul>
                     <li>
@@ -138,10 +138,10 @@
                     </li>
                 </ul>  
             </div>
-            <div>
-                <div>
-                    <span>Brands</span>
-                    <button>Clear</button>
+            <div class="filter-head m-hr-1">
+                <div class="flex-row align-center justify-between">
+                    <span class="sub-filt-head font-weight-5">Brands</span>
+                    <button class="btn-border-none bg-transparent filter-cta-btn font-weight-5">Clear</button>
                 </div>
                 <ul>
                     <li>
@@ -170,10 +170,10 @@
                     </li>
                 </ul>
             </div>
-            <div>
-                <div>
-                    <span>Other</span>
-                    <button>Clear</button>
+            <div class="filter-head m-hr-1">
+                <div class="flex-row align-center justify-between">
+                    <span class="sub-filt-head font-weight-5">Other</span>
+                    <button class="btn-border-none bg-transparent filter-cta-btn font-weight-5">Clear</button>
                 </div>
                 <ul>
                     <li>
@@ -191,6 +191,7 @@
                 </ul>
             </div>
         </aside>
+        
     </div>
 </body>
 </html>
