@@ -1,0 +1,52 @@
+.productList-temp {
+    width: 100%;
+    grid-template-areas: 
+        "navbar navbar navbar"
+        "aside main main";
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 18rem 1fr;
+    gap: 3rem;
+}
+
+
+.pl-navbar {
+    grid-area: navbar;
+}
+
+.aside-box {
+    grid-area: aside;
+    margin-left: 1rem; 
+    padding: 2rem 1rem;
+    background: var(--white-color);
+    box-shadow: 0 1px 10px var(--light-gray-color);;
+}
+
+.main-box {
+    grid-area: main;
+    /* padding: auto 3rem;  */
+}
+
+.card-vl-cta-section {
+    margin-top: 1rem;
+}
+
+.filter-head {
+    border-bottom: 2px solid var(--light-gray-color);
+}
+
+
+.sub-filt-head {
+    font-size: 1.3rem;
+}
+
+.filter-cta-btn {
+    font-size: 1.1rem;
+    color: var(--dark-gray-color)
+}
+
+.filter-cta-btn:hover {
+    background: var(--dark-gray-color);
+    color: var(--white-color);
+    border-radius: 4px;
+    padding: 2px 4px;
+}
