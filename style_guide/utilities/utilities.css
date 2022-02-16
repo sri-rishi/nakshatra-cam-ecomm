@@ -9,3 +9,33 @@
 .ml-1 {
     margin-left: 1rem;
 }
+.m-vl-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.m-hr-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.bg-trans {
+    background: transparent;
+}
+
+.btn-border-none {
+    border: none;
+    outline: transparent;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
