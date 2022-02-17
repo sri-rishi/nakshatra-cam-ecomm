@@ -113,7 +113,7 @@
 }
 
   
-@media only screen and (max-width: 864px) {
+@media only screen and (max-width: 54em) {
     .cover-text-box {
         left: 15%;
     }
@@ -124,7 +124,7 @@
 }
 
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 34em) {
     .cover-text-box {
         align-items: center;
         text-align: center;

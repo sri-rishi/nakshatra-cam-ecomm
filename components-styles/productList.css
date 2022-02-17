@@ -96,13 +96,13 @@
     max-height: 25rem;
 }
 
-@media only screen and (max-width: 1240px) {
+@media only screen and (max-width: 77.5em) {
     .main-box {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media only screen and (max-width: 929px) {
+@media only screen and (max-width: 59em) {
     .productList-temp {
         grid-template-areas: 
             "navbar navbar"
@@ -131,13 +131,13 @@
 }
 
 
-@media only screen and (max-width: 614px) {
+@media only screen and (max-width: 38em) {
     .main-box {
         padding: 3rem 8px;
     }  
 }
 
-@media only screen and (max-width: 485px) {
+@media only screen and (max-width: 31em) {
     .main-box {
         grid-template-columns: 1fr;
     }
