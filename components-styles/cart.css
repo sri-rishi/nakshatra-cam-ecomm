@@ -1,9 +1,9 @@
 .cart-main {
-    /* margin-top: 10rem; */
     grid-template-columns: 1fr 0.1fr 0.5fr;
     width: fit-content;
     margin: 10rem auto 4rem; 
 }
+
 .cart-item {
     width: 35rem;
     padding: 1rem;
@@ -85,4 +85,21 @@
 
 .price-value{
     padding-bottom: 1rem;
+}
+
+
+@media only screen and (max-width: 45em) {
+    .cart-main {
+        grid-template-columns: 1fr;
+    }
+
+    .price-detail-section {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    .cart-item {
+        width: 30rem;
+    }
 }
