@@ -88,9 +88,16 @@
 }
 
 .img-box {
-    max-height: 12rem;
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 } 
+
+.cart-img {
+    height: 8rem;
+    object-fit: contain;
+}
 
 .product-card {
     max-height: 25rem;
@@ -102,7 +109,7 @@
     }
 }
 
-@media only screen and (max-width: 59em) {
+@media only screen and (max-width: 49em) {
     .productList-temp {
         grid-template-areas: 
             "navbar navbar"
@@ -111,7 +118,7 @@
     }
 
     .main-box {
-        padding-bottom: 6rem;
+        padding: 3rem 8px 6rem;
     }
 
     .aside-box {
@@ -130,15 +137,8 @@
     }
 }
 
-
-@media only screen and (max-width: 38em) {
-    .main-box {
-        padding: 3rem 8px;
-    }  
-}
-
-@media only screen and (max-width: 31em) {
+@media only screen and (max-width: 33.75em) {
     .main-box {
         grid-template-columns: 1fr;
     }
-}
+} 
