@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://nakshatra-ui.netlify.app/lib/components.css">
+    <link rel="stylesheet" href="../index.css">
+    <title>Product List</title>
+</head>
+<body>
+    <div class="productList-temp grid">
+        <nav class="nav-box flex-row align-center pl-navbar">
+            <div class="nav-section flex-row align-center justify-evenly">
+                <div id="hamburger-btn" class="hamburger display-none btn-border-none bg-transparent">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="brand-title">
+                    <a href="#">
+                        <div class="title font-weight-3">
+                            nakshatra <span class="sub-title">Shop</span>
+                        </div>
+                    </a>
+                </div>
+                <ul class="flex-row nav-cta-box nav-items-box align-center justify-evenly">
+                    <li class="nav-items">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#">Shop</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="flex-row nav-items-box nav-section justify-flex-end">
+                <a class="btn-login mobile-hidden" href="#">
+                    <button class="btn btn-primary mr-1">Login</button>
+                </a>
+                <div class="search-div flex-row align-center mobile-hidden mr-1">
+                    <label for="serach-box">
+                        <input class="input-search btn-border-none bg-transparent" id="serach-box" type="text" placeholder="Search" aria-label="Search Box"/>
+                        <button class="nav-search-btn btn-border-none bg-transparent" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </label>
+                </div>
+                
+                <ul class="nav-link-items flex-row align-center justify-around">
+                    <li class="nav-items user-icon mobile-hidden">
+                        <a href="#">
+                            <i class="fas fa-user-alt"></i>
+                        </a>
+                    </li>
+                    <li class="nav-items nav-cta-icon">
+                        <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="icon-badge number-sm-badge">9</span>
+                        </a>
+                    </li>
+                    <li class="nav-items nav-cta-icon">
+                        <a class="#">
+                            <i class="fas fa-heart"></i>
+                            <span class="icon-badge number-sm-badge">9</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <aside  class="aside-box grid">
+            <div class="filter-sections filter-head flex-row align-center justify-between">
+                <span class="xsm-heading font-weight-5">Filter</span>
+                <button class="btn-border-none bg-transparent filter-cta-btn font-weight-5">Clear All</button>
+            </div>
+            <div class="filter-sections m-hr-1 flex-column">
+                <div class="flex-row align-center justify-between">
+                    <span class="sub-filt-head font-weight-5">Sort</span>
+                    <button class="btn-border-none bg-transparent filter-cta-btn font-weight-5">Reset</button>
+                </div>
+                <ul class="m-vl-1 filter-items">
+                    <li class="align-center">
+                        <label for="price-l-to-h">
+                            <input class="filter-inputs" type="radio" id="price-l-to-h" name="price-l-to-h" aria-label="Price Low to High">
+                            Price - Low to High
+                        </label>
+                    </li>
+                    <li>
+                        <label for="price-h-to-l">
+                            <input class="filter-inputs" id="price-h-to-l" type="radio" name="price-h-to-l"  aria-label="Price High to Low">
+                            Price - High to Low
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-sections m-hr-1 flex-column">
+                <div class="flex-row align-center justify-between">
+                    <span class="sub-filt-head font-weight-5">Category</span>
+                    <button class="btn-border-none bg-transparent filter-cta-btn font-weight-5">Clear</button>
+                </div>
+                <ul class="m-vl-1 filter-items">
+                    <li>
+                        <label for="camera-camcorders">
+                            <input class="filter-inputs" id="camera-camcorders" type="checkbox"
+                            name="camera-camcorders" aria-label="Camera & Camcorders">
+                            Camera & Camcorders
+                        </label>
+                    </li>
+                    <li>
+                        <label for="lenses-optics">
+                            <input class="filter-inputs" id="lenses-optics" type="checkbox"
+                            name="lenses-optics" aria-label="Lenses & Optics">
+                            Lenses & Optics
+                        </label>
+                    </li>
+                    <li>
+                        <label for="cam-acs">
+                            <input class="filter-inputs" id="cam-acs" type="checkbox" name="cam-acs" aria-label="Cameras Accessories">
+                            Cameras Accessories
+                        </label>
+                    </li>
+                    <li>
+                        <label for="light-studio">
+                            <input class="filter-inputs" id="light-studio" type="checkbox" name="light-studio" aria-label="Lighting & Studio">
+                            Lighting & Studio
+                        </label>
+                    </li>
+                    <li>
+                        <label for="video-audio">
+                            <input class="filter-inputs" id="video-audio" type="checkbox" name="video-audio" aria-label="Video & Audio">
+                            Video & Audio
+                        </label>
+                    </li>
+                    <li>
+                        <label for="films">
+                            <input class="filter-inputs" id="films" type="checkbox" name="films" aria-label="Films">
+                            Films
+                        </label>
+                    </li>
+                </ul>  
+            </div>
+            <div class="filter-sections m-hr-1 flex-column">
+                <div class="flex-row align-center justify-between">
+                    <span class="sub-filt-head font-weight-5">Brands</span>
+                    <button class="btn-border-none bg-transparent filter-cta-btn font-weight-5">Clear</button>
+                </div>
+                <ul class="m-vl-1 filter-items">
+                    <li>
+                        <label for="canon">
+                            <input class="filter-inputs" id="canon" type="checkbox" name="canon" aria-label="Canon Brand">
+                            Canon
+                        </label>
+                    </li>
+                    <li>
+                        <label for="kodak">
+                            <input class="filter-inputs" id="kodak" type="checkbox" name="kodak" aria-label="Kodak Brand">
+                            Kodak
+                        </label>
+                    </li>
+                    <li>
+                        <label for="nikon">
+                            <input class="filter-inputs" id="nikon" type="checkbox" name="nikon" aria-label="Nikon Brand">
+                            Nikon
+                        </label>
+                    </li>
+                    <li>
+                        <label for="sony">
+                            <input class="filter-inputs" id="sony" type="checkbox" name="sony" aria-label="Sony Brand">
+                            Sony
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-sections m-hr-1 flex-column">
+                <div class="flex-row align-center justify-between">
+                    <span class="sub-filt-head font-weight-5">Other</span>
+                    <button class="btn-border-none bg-transparent filter-cta-btn font-weight-5">Clear</button>
+                </div>
+                <ul class="m-vl-1 filter-items">
+                    <li>
+                        <label for="out-stock">
+                            <input class="filter-inputs" id="out-stock" type="checkbox" name="out-stock" aria-label="Include Out of Stock" checked>
+                            Include Out of Stock
+                        </label>
+                    </li>
+                    <li>
+                        <label for="fast-delivery">
+                            <input class="filter-inputs" id="fast-delivery" type="checkbox" name="fast-delivery" aria-label="Fast Delivery">
+                            Fast Delivery
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-box grid grid-3-column">
+            <div class="card card-vl-full-img vl-card">
+                <div class="img-vl-container img-box">
+                    <img class="img-responsive" src="../assests/images/canon-camera1.png" alt="Canon Camera">
+                </div>
+                <div class="text-container text-vl-container text-vl-p-container">
+                    <div class="card-title">
+                        <h5 class="xsm-heading">Canon</h5>
+                        <p class="card-subtitle mt-8-px">DSLR EOS R6 Camera</p>
+                        <button class="card-btn-transparent card-like-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="card-desc">
+                        <span class="xsm-heading">&#8377; 54,000</span> <span class="text-striked">&#8377; 58,000</span>
+                    </div>
+                    <div class="card-vl-cta-section align-center">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-vl-full-img vl-card">
+                <div class="img-vl-container img-box">
+                    <img class="img-responsive" src="../assests/images/nikon-lense1.png" alt="Nikon Lens">
+                </div>
+                <div class="text-container text-vl-container text-vl-p-container">
+                    <div class="card-title">
+                        <h5 class="xsm-heading">Nikon</h5>
+                        <p class="card-subtitle mt-8-px">AF's NIKKOR 7--200mm Lens</p>
+                        <button class="card-btn-transparent card-like-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="card-desc">
+                        <span class="xsm-heading">&#8377; 2,300</span> <span class="text-striked">&#8377; 2,500</span>
+                    </div>
+                    <div class="card-vl-cta-section align-center">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-vl-full-img vl-card">
+                <div class="img-vl-container img-box">
+                    <img class="img-responsive" src="../assests/images/sony-Accessories1.png" alt="Sony shooting grip">
+                </div>
+                <div class="text-container text-vl-container text-vl-p-container">
+                    <div class="card-title">
+                        <h5 class="xsm-heading">Sony</h5>
+                        <p class="card-subtitle mt-8-px">Wireless Remote Shooting Grip</p>
+                        <button class="card-btn-transparent card-like-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="card-desc">
+                        <span class="xsm-heading">&#8377; 10, 500</span> <span class="text-striked">&#8377; 12, 300</span>
+                    </div>
+                    <div class="card-vl-cta-section align-center">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-vl-full-img vl-card">
+                <div class="img-vl-container img-box">
+                    <img class="img-responsive" src="../assests/images/canon-camera1.png" alt="Canon Camera">
+                </div>
+                <div class="text-container text-vl-container text-vl-p-container">
+                    <div class="card-title">
+                        <h5 class="xsm-heading">Canon</h5>
+                        <p class="card-subtitle mt-8-px">DSLR EOS R6 Camera</p>
+                        <button class="card-btn-transparent card-like-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="card-desc">
+                        <span class="xsm-heading">&#8377; 54,000</span> <span class="text-striked">&#8377; 58,000</span>
+                    </div>
+                    <div class="card-vl-cta-section align-center">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-vl-full-img vl-card">
+                <div class="img-vl-container img-box">
+                    <img class="img-responsive" src="../assests/images/nikon-lense1.png" alt="Nikon Lens">
+                </div>
+                <div class="text-container text-vl-container text-vl-p-container">
+                    <div class="card-title">
+                        <h5 class="xsm-heading">Nikon</h5>
+                        <p class="card-subtitle mt-8-px">AF's NIKKOR 7--200mm Lens</p>
+                        <button class="card-btn-transparent card-like-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="card-desc">
+                        <span class="xsm-heading">&#8377; 2,300</span> <span class="text-striked">&#8377; 2,500</span>
+                    </div>
+                    <div class="card-vl-cta-section align-center">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-vl-full-img vl-card">
+                <div class="img-vl-container img-box">
+                    <img class="img-responsive" src="../assests/images/sony-Accessories1.png" alt="Sony shooting grip">
+                </div>
+                <div class="text-container text-vl-container text-vl-p-container">
+                    <div class="card-title">
+                        <h5 class="xsm-heading">Sony</h5>
+                        <p class="card-subtitle mt-8-px">Wireless Remote Shooting Grip</p>
+                        <button class="card-btn-transparent card-like-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="card-desc">
+                        <span class="xsm-heading">&#8377; 10, 500</span> <span class="text-striked">&#8377; 12, 300</span>
+                    </div>
+                    <div class="card-vl-cta-section align-center">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-vl-full-img vl-card">
+                <div class="img-vl-container img-box">
+                    <img class="img-responsive" src="../assests/images/canon-camera1.png" alt="Canon Camera">
+                </div>
+                <div class="text-container text-vl-container text-vl-p-container">
+                    <div class="card-title">
+                        <h5 class="xsm-heading">Canon</h5>
+                        <p class="card-subtitle mt-8-px">DSLR EOS R6 Camera</p>
+                        <button class="card-btn-transparent card-like-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="card-desc">
+                        <span class="xsm-heading">&#8377; 54,000</span> <span class="text-striked">&#8377; 58,000</span>
+                    </div>
+                    <div class="card-vl-cta-section align-center">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-vl-full-img vl-card">
+                <div class="img-vl-container img-box">
+                    <img class="img-responsive" src="../assests/images/nikon-lense1.png" alt="Nikon Lens">
+                </div>
+                <div class="text-container text-vl-container text-vl-p-container">
+                    <div class="card-title">
+                        <h5 class="xsm-heading">Nikon</h5>
+                        <p class="card-subtitle mt-8-px">AF's NIKKOR 7--200mm Lens</p>
+                        <button class="card-btn-transparent card-like-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="card-desc">
+                        <span class="xsm-heading">&#8377; 2,300</span> <span class="text-striked">&#8377; 2,500</span>
+                    </div>
+                    <div class="card-vl-cta-section align-center">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-vl-full-img vl-card">
+                <div class="img-vl-container img-box">
+                    <img class="img-responsive" src="../assests/images/sony-Accessories1.png" alt="Sony shooting grip">
+                </div>
+                <div class="text-container text-vl-container text-vl-p-container">
+                    <div class="card-title">
+                        <h5 class="xsm-heading">Sony</h5>
+                        <p class="card-subtitle mt-8-px">Wireless Remote Shooting Grip</p>
+                        <button class="card-btn-transparent card-like-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="card-desc">
+                        <span class="xsm-heading">&#8377; 10, 500</span> <span class="text-striked">&#8377; 12, 300</span>
+                    </div>
+                    <div class="card-vl-cta-section align-center">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="filter-hidden display-none align-items">
+            <button id="filter-shown" class="xsm-heading font-weight-5 bg-transparent btn-border-none">Filter</button>
+        </footer>
+    </div>
+
+    <script src="../assests/app.js"></script>
+</body>
+</html>
