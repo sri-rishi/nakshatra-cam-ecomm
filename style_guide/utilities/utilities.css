@@ -31,10 +31,6 @@
     margin-bottom: 1rem;
 }
 
-.bg-trans {
-    background: transparent;
-}
-
 .btn-border-none {
     border: none;
     outline: transparent;
@@ -42,4 +38,12 @@
 
 .justify-between {
     justify-content: space-between;
+}
+
+.align-flex-end {
+    align-items: flex-end;
+}
+
+.card-shadow {
+    box-shadow: 0 1px 10px var(--light-gray-color);
 }

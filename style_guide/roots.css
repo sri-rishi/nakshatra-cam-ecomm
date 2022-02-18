@@ -41,7 +41,6 @@ body {
     --lightest-gray-color: rgba(224,224,224,0.5);
 }
 
-
 @media only screen and (max-width: 54em) {
     html {
         font-size: 80%;
