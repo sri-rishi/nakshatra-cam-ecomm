@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://nakshatra-ui.netlify.app/lib/components.css">
+    <link rel="stylesheet" href="../index.css">
+    <title>nakshatra-shop</title>
+</head>
+<body>
+    <nav class="nav-box flex-row align-center">
+        <div class="nav-section flex-row align-center justify-evenly">
+            <div class="hamburger display-none btn-border-none bg-transparent">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="brand-title">
+                <a href="#">
+                    <div class="title font-weight-3">
+                        nakshatra <span class="sub-title">Shop</span>
+                    </div>
+                </a>
+            </div>
+            <ul class="flex-row nav-cta-box nav-items-box align-center justify-evenly">
+                <li class="nav-items">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./components/productList.html">Shop</a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="flex-row nav-items-box nav-section justify-flex-end">
+            <a class="btn-login mobile-hidden" href="#">
+                <button class="btn btn-primary mr-1">Login</button>
+            </a>
+            <div class="search-div flex-row align-center mobile-hidden mr-1">
+                <label for="serach-box">
+                    <input class="input-search btn-border-none bg-transparent" id="serach-box" type="text" placeholder="Search" aria-label="Search Box"/>
+                    <button class="nav-search-btn btn-border-none bg-transparent" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </label>
+            </div>
+            
+            <ul class="nav-link-items flex-row align-center justify-around">
+                <li class="nav-items user-icon mobile-hidden">
+                    <a href="#">
+                        <i class="fas fa-user-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-items nav-cta-icon">
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="icon-badge number-sm-badge">9</span>
+                    </a>
+                </li>
+                <li class="nav-items nav-cta-icon">
+                    <a class="#">
+                        <i class="fas fa-heart"></i>
+                        <span class="icon-badge number-sm-badge">9</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="cart-main grid gap-1 justify-center">
+        
+    </main>
+</body>
+</html>
