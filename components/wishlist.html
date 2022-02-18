@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://nakshatra-ui.netlify.app/lib/components.css">
+    <link rel="stylesheet" href="../index.css">
+    <title>nakshatra-shop</title>
+</head>
+<body>
+    <nav class="nav-box flex-row align-center">
+        <div class="nav-section flex-row align-center justify-evenly">
+            <div class="hamburger display-none btn-border-none bg-transparent">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="brand-title">
+                <a href="#">
+                    <div class="title font-weight-3">
+                        nakshatra <span class="sub-title">Shop</span>
+                    </div>
+                </a>
+            </div>
+            <ul class="flex-row nav-cta-box nav-items-box align-center justify-evenly">
+                <li class="nav-items">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./components/productList.html">Shop</a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="flex-row nav-items-box nav-section justify-flex-end">
+            <a class="btn-login mobile-hidden" href="#">
+                <button class="btn btn-primary mr-1">Login</button>
+            </a>
+            <div class="search-div flex-row align-center mobile-hidden mr-1">
+                <label for="serach-box">
+                    <input class="input-search btn-border-none bg-transparent" id="serach-box" type="text" placeholder="Search" aria-label="Search Box"/>
+                    <button class="nav-search-btn btn-border-none bg-transparent" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </label>
+            </div>
+            
+            <ul class="nav-link-items flex-row align-center justify-around">
+                <li class="nav-items user-icon mobile-hidden">
+                    <a href="#">
+                        <i class="fas fa-user-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-items nav-cta-icon">
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="icon-badge number-sm-badge">9</span>
+                    </a>
+                </li>
+                <li class="nav-items nav-cta-icon">
+                    <a class="#">
+                        <i class="fas fa-heart"></i>
+                        <span class="icon-badge number-sm-badge">9</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="wishlist-main-box grid gap-3">
+        <div class="wish-head">
+            <h2 class="sm-heading">My Wishlist (2 items)</h2>
+        </div>
+        <div class="wishlist-main flex-row gap-2 justify-center">
+            <div class="card card-vl-full-img vl-card card-shadow">
+                <div class="img-vl-container img-box">
+                    <img class="img-responsive cart-img" src="../assests/images/canon-camera1.png" alt="Canon Camera">
+                </div>
+                <div class="text-container text-vl-container text-vl-p-container">
+                    <div class="card-title">
+                        <h5 class="xsm-heading">Canon</h5>
+                        <p class="card-subtitle mt-8-px">DSLR EOS 1500D Camera</p>
+                        <button class="card-btn-transparent card-like-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="card-desc">
+                        <span class="xsm-heading">&#8377; 52,200</span> <span class="text-striked">&#8377; 58,000</span>
+                    </div>
+                    <div class="card-vl-cta-section align-center">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Move To Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-vl-full-img vl-card card-shadow">
+                <div class="img-vl-container img-box">
+                    <img class="img-responsive cart-img" src="../assests/images/nikon-lense1.png" alt="Nikon Lens">
+                </div>
+                <div class="text-container text-vl-container text-vl-p-container">
+                    <div class="card-title">
+                        <h5 class="xsm-heading">Nikon</h5>
+                        <p class="card-subtitle mt-8-px">AF's NIKKOR 7-200mm Lens</p>
+                        <button class="card-btn-transparent card-like-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="card-desc">
+                        <span class="xsm-heading">&#8377; 2,300</span> <span class="text-striked">&#8377; 2,500</span>
+                    </div>
+                    <div class="card-vl-cta-section align-center">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Move To Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.card-like-btn {
+    color: var(--dark-red-color);
+}
+
+.wishlist-main-box {
+    margin: 10rem auto 2rem;
+}
+
+.wish-head {
+    text-align: center;
+}
