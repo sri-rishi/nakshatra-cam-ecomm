@@ -1,8 +1,8 @@
-.login-main {
+.auth-main {
     margin-top: 10rem;
 }
 
-.login-form {
+.auth-form {
     background: var(--white-color);
 }
 
