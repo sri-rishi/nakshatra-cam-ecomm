@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://nakshatra-ui.netlify.app/lib/components.css">
+    <link rel="stylesheet" href="../index.css">
+    <title>Signup</title>
+</head>
+<body>
+    <nav class="nav-box flex-row align-center">
+        <div class="nav-section flex-row align-center justify-evenly">
+            <div class="hamburger display-none btn-border-none bg-transparent">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="brand-title">
+                <a href="#">
+                    <div class="title font-weight-3">
+                        nakshatra <span class="sub-title">Shop</span>
+                    </div>
+                </a>
+            </div>
+            <ul class="flex-row nav-cta-box nav-items-box align-center justify-evenly">
+                <li class="nav-items">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./components/productList.html">Shop</a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="flex-row nav-items-box nav-section justify-flex-end">
+            <a class="btn-login mobile-hidden" href="./login.html">
+                <button class="btn btn-primary mr-1">Login</button>
+            </a>
+            <div class="search-div flex-row align-center mobile-hidden mr-1">
+                <label for="serach-box">
+                    <input class="input-search btn-border-none bg-transparent" id="serach-box" type="text" placeholder="Search" aria-label="Search Box"/>
+                    <button class="nav-search-btn btn-border-none bg-transparent" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </label>
+            </div>
+            
+            <ul class="nav-link-items flex-row align-center justify-around">
+                <li class="nav-items user-icon mobile-hidden">
+                    <a href="#">
+                        <i class="fas fa-user-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-items nav-cta-icon">
+                    <a href="./cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="icon-badge number-sm-badge">9</span>
+                    </a>
+                </li>
+                <li class="nav-items nav-cta-icon">
+                    <a href="./wishlist.html">
+                        <i class="fas fa-heart"></i>
+                        <span class="icon-badge number-sm-badge">9</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="signUp-main flex-row align-center justify-center">
+        <form class="form-box signUp-form" action="#">
+            <div class="form-head">
+                <h4 class="sm-heading">Sign Up</h4>
+            </div>
+            <label class="form-label" for="first-name" aria-label="First Name">First Name
+                <input class="input std-input" type="text" id="first-name" name="first-name" placeholder="Enter First Name">
+            </label>
+        
+            <label class="form-label" for="second-name" aria-label="Second Name">Second Name
+                <input class="input std-input" type="text" id="second-name" name="secons-name" placeholder="Enter Second Name">
+            </label>
+        
+            <label class="form-label" for="email" aria-label="Email">Email
+                <input class="input std-input" type="email"  id="email" name="email" placeholder="Enter Your Email" />
+            </label>
+        
+            <label class="form-label" for="password" aria-label="Password">Password
+                <input class="input std-input" type="password" id="password" name="password" placeholder="Enter Your Password" />
+            </label>
+            <label for="accept-all" aria-label="Accept condition checkbox">
+                <input class="check-input" id="accept-all" name="accept-all" type="checkbox"/>
+                I accept all terms and condition
+            </label>
+        
+            <a href="#">
+                <button class="form-cta btn btn-primary">Sign Up</button>
+            </a>
+        
+            <a href="./login.html">
+                <button class="form-cta btn btn-outline-secondary">Already have an account</button>
+            </a>
+        </form>
+    </main>
+</body>
+</html>
