@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://nakshatra-ui.netlify.app/lib/components.css">
+    <link rel="stylesheet" href="../index.css">
+    <title>nakshatra-shop</title>
+</head>
+<body>
+    <nav class="nav-box flex-row align-center">
+        <div class="nav-section flex-row align-center justify-evenly">
+            <div class="hamburger display-none btn-border-none bg-transparent">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="brand-title">
+                <a href="../index.html">
+                    <div class="title font-weight-3">
+                        nakshatra <span class="sub-title">Shop</span>
+                    </div>
+                </a>
+            </div>
+            <ul class="flex-row nav-cta-box nav-items-box align-center justify-evenly">
+                <li class="nav-items">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./components/productList.html">Shop</a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="flex-row nav-items-box nav-section justify-flex-end">
+            <a class="btn-login mobile-hidden" href="./login.html">
+                <button class="btn btn-primary mr-1">Login</button>
+            </a>
+            <div class="search-div flex-row align-center mobile-hidden mr-1">
+                <label for="serach-box">
+                    <input class="input-search btn-border-none bg-transparent" id="serach-box" type="text" placeholder="Search" aria-label="Search Box"/>
+                    <button class="nav-search-btn btn-border-none bg-transparent" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </label>
+            </div>
+            
+            <ul class="nav-link-items flex-row align-center justify-around">
+                <li class="nav-items user-icon mobile-hidden">
+                    <a href="#">
+                        <i class="fas fa-user-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-items nav-cta-icon">
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="icon-badge number-sm-badge">9</span>
+                    </a>
+                </li>
+                <li class="nav-items nav-cta-icon">
+                    <a href="./wishlist.html">
+                        <i class="fas fa-heart"></i>
+                        <span class="icon-badge number-sm-badge">9</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="cart-main grid gap-1 justify-center">
+        <div class="grid cart-item-box">
+            <div class="cart-item grid grid-equal card-shadow">
+                <div class="img-container">
+                    <img class="img-responsive flex-row align-center justify-center" src="../assests/images/canon-camera1.png" alt="Canon Camera">
+                </div>
+                <div class="flex-column">
+                    <h5 class="xsm-heading">Canon EOS 1500D</h5>
+                    <p class="price-section flex-row align-center">
+                        <span class="xsm-heading">&#8377;52,200</span> <span class="text-striked">&#8377;58,000</span>
+                        <span class="price-off text-sm-size">10% OFF</span>
+                    </p>
+                    <div class="flex-row align-center gap-1">
+                        <button class="cta-qty-btn btn-secondary btn-border-none flex-row justify-center align-center">
+                            <i aria-hidden="true" class="fas fa-minus"></i>
+                        </button>
+                        <p class="qty-box text-sm-size">1</p>
+                        <button class="cta-qty-btn btn-border-none flex-row justify-center align-center">
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="cart-cta-div flex-column gap-1 justify-center mt-1">
+                        <button class="btn btn-gray-light">
+                            Remove form Cart
+                        </button>
+                        <button class="btn btn-primary-light bg-transparent">
+                            Move to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item grid grid-equal card-shadow">
+                <div class="img-container">
+                    <img class="img-responsive flex-row align-center justify-center" src="../assests/images/nikon-lense1.png" alt="Canon Camera">
+                </div>
+                <div class="flex-column">
+                    <h5 class="xsm-heading">Nikon</h5>
+                    <p class="price-section flex-row align-center">
+                        <span class="xsm-heading">&#8377;2,300</span> <span class="text-striked">&#8377;2,500</span>
+                        <span class="price-off text-sm-size">8% OFF</span>
+                    </p>
+                    <div class="flex-row align-center gap-1">
+                        <button class="cta-qty-btn btn-secondary btn-border-none flex-row justify-center align-center">
+                            <i aria-hidden="true" class="fas fa-minus"></i>
+                        </button>
+                        <p class="qty-box text-sm-size">1</p>
+                        <button class="cta-qty-btn btn-border-none flex-row justify-center align-center">
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="cart-cta-div flex-column gap-1 justify-center mt-1">
+                        <button class="btn btn-gray-light">
+                            Remove form Cart
+                        </button>
+                        <button class="btn btn-primary-light bg-transparent">
+                            Move to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="flex-column price-detail-section gap-1 card-shadow">
+            <h6 class="xsm-heading border-bottom">Price Details</h6>
+            <div class="flex-column gap-1 border-bottom price-value">
+                <p class="flex-row align-center justify-between"><span>Price (2 items)</span> <span>&#8377;60500</span></p>
+                <p class="flex-row align-center justify-between"><span>Discount</span> <span>&#8377;-6000</span></p>
+                <p class="flex-row align-center justify-between"><span>Delivery Charges</span> <span>&#8377;899</span></p>
+            </div>
+            <div class="flex-row align-center justify-between border-bottom">
+                <h6 class="xsm-heading">Total Amount</h6>
+                <p>54,500</p>
+            </div>
+            <div class="flex-column gap-1">
+                <p>You will save &#8377;6000 on this order</p>
+                <button class="btn btn-primary">Place Order</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

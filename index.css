@@ -1,3 +1,8 @@
 @import url(./style_guide/style_guid.css);
 @import url(./components-styles/home.css);
-@import url(./components-styles/productList.css)
+@import url(./components-styles/productList.css);
+@import url(./components-styles/cart.css);
+@import url(./components-styles/wishlist.css);
+@import url(./components-styles/login.css);
+@import url(./components-styles/signup.css);
+
