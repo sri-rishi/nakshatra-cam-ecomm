@@ -16,6 +16,7 @@
 
 .cover-img {
     height: 100vh;
+    object-fit: cover;
 }
 
 .cover-text-box {
